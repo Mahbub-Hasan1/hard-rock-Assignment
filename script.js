@@ -16,7 +16,7 @@ searchSong.addEventListener("keypress",event=>{
     .then(res=>res.json())
     .then(data=>{
         
-        for(let i=1; i<=5; i++){
+        for(let i=1; i<=10; i++){
            document.getElementById("title"+i).innerText=data.data[i].title
            document.getElementById("artist"+i).innerText=data.data[i].artist.name
 
